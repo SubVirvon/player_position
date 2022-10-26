@@ -13,7 +13,7 @@ namespace player_position
             Player player = new Player(10, 10);
             Renderer renderer = new Renderer();
 
-            renderer.RenderPlayer(player.PositonX, player.PositonY);
+            renderer.DrawPlayer(player.PositonX, player.PositonY);
         }
     }
 
@@ -31,7 +31,7 @@ namespace player_position
 
     class Renderer
     {
-        public void RenderPlayer(int positionX, int positionY, char playerIcon = 'O')
+        public void DrawPlayer(int positionX, int positionY, char playerIcon = 'O')
         {
             Console.SetCursorPosition(positionX, positionY);
             Console.Write(playerIcon);
